@@ -1,6 +1,6 @@
 # Algorithm_Debt_Research
 
-These python files were generated using Colab.
+These python files were written using Colab.
 
 ## Files
 ### Dataset_description.ipynb
