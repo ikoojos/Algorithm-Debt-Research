@@ -19,7 +19,7 @@ To go to the files in Google Colab, use this [link](https://colab.research.googl
  - Contains codes for the experiments using RoBERTa and RoBERTa embeddings for AD identification [link](https://colab.research.google.com/drive/1P6lG_EnCNbSxsHSaU22bE5s0uqNe0Pqt#scrollTo=pKh3sNpN7-Ui)
 
 - **SVM.ipynb**
-  - Contains codes for the Support Vector Machine (SVM)-based classifiers for text classification tasks.
+  - Contains codes for the Support Vector Machine (SVM)-based classifiers for text classification tasks. This notebook contains the implementation of the various kernels.
   
 - **LR2.ipynb**
   - Contains codes for the Logistic Regression (LR) models to identify AD from source code.
@@ -36,10 +36,10 @@ To go to the files in Google Colab, use this [link](https://colab.research.googl
   - Contains codes for the implementation of the ALBERT model for AD classification.
 
 - **INSTRUCTOR MODEL_LR.ipynb**
-  - Contains codes for the for INSTRUCTOR embeddings combined with Logistic Regression for AD detection.
+  - Contains codes for the for INSTRUCTOR embeddings combined with Logistic Regression for AD identification.
 
 - **Voyage AI.ipynb**
-  - Contains codes for the for Voyage AI embeddings combined with Logistic Regression for AD detection.
+  - Contains codes for the for Voyage AI embeddings combined with Logistic Regression for AD identification.
 ---
 
 ## Data and Embeddings
