@@ -16,7 +16,7 @@ To go to the files in Google Colab, use this [link](https://colab.research.googl
 ## Notebooks
 
 - **RoBERTa.ipynb**
- - Contains codes for the experiments using RoBERTa and RoBERTa embeddings for AD identification.
+ - Contains codes for the experiments using RoBERTa and RoBERTa embeddings for AD identification [link](https://colab.research.google.com/drive/1P6lG_EnCNbSxsHSaU22bE5s0uqNe0Pqt#scrollTo=pKh3sNpN7-Ui)
 
 - **SVM.ipynb**
   - Contains codes for the Support Vector Machine (SVM)-based classifiers for text classification tasks.
