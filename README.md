@@ -1,8 +1,9 @@
 # Algorithm Debt Research
 
-This repository contains Jupyter notebooks developed in Google Colab for identifying **Algorithm Debt (AD)** in Deep Learning (DL) frameworks. The primary aim is to classify and identify AD within the source code of DL frameworks using various Machine Learning (ML)/DL models and embeddings.
+This repository contains Jupyter notebooks developed in Google Colab for identifying **Algorithm Debt (AD)** in Deep Learning (DL) frameworks. The aim of this project is to investigate AD identification performance of various
+Machine Learning (ML)/DL models and embedding from source code comments known as SATD through an empirical study.
 
-To go to the files in Google Drive, use this [link](https://drive.google.com/drive/folders/1swdyQlbX3OY6wG2RPfXP9kjIS44oQAz9) to access the project in Google Drive.
+To access the files in Google Drive, use this [link](https://drive.google.com/drive/folders/1swdyQlbX3OY6wG2RPfXP9kjIS44oQAz9) to access the project in Google Drive.
 
 
 ## Table of Contents
