@@ -1,8 +1,9 @@
 # Algorithm Debt Research
 
-This repository contains Jupyter notebooks developed in Google Colab for researching **Algorithm Debt (AD)** in machine learning (ML) and deep learning (DL) systems. The primary aim is to classify and identify AD within ML/DL source code using various models and embeddings.
+This repository contains Jupyter notebooks developed in Google Colab for researching **Algorithm Debt (AD)** in machine learning (ML) and deep learning (DL) systems. The primary aim is to classify and identify AD within ML/DL source code using various ML/DL models and embeddings.
 
-To run these files in Google Colab, use this [link](https://colab.research.google.com/drive/1P6lG_EnCNbSxsHSaU22bE5s0uqNe0Pqt#scrollTo=pKh3sNpN7-Ui) to access the project in Google Drive.
+To run these files in Google Drive, use this [link] https://drive.google.com/drive/folders/1swdyQlbX3OY6wG2RPfXP9kjIS44oQAz9
+To go to the files in Google Colab, use this [link](https://colab.research.google.com/drive/1P6lG_EnCNbSxsHSaU22bE5s0uqNe0Pqt#scrollTo=pKh3sNpN7-Ui) to access the project in Google Drive.
 
 ## Table of Contents
 1. [Notebooks](#notebooks)
@@ -32,7 +33,6 @@ To run these files in Google Colab, use this [link](https://colab.research.googl
 
 - **Albert_Experiments.ipynb**
   - Contains codes for the implementation of the ALBERT model for AD classification.
-
 
 - **INSTRUCTOR MODEL_LR.ipynb**
   - Contains codes for the for INSTRUCTOR embeddings combined with Logistic Regression for AD detection.
@@ -64,6 +64,6 @@ To run the notebooks:
 
 ---
 
-This repository provides a flexible structure for exploring AD in ML/DL. Each notebook allows independent experimentation, enabling you to test various models, embeddings, and AD-related feature engineering methods. 
+This repository provides the codes for experiments for the identification AD in ML/DL. Each notebook allows independent experimentation, enabling the testing of various models, embeddings, and AD-related feature engineering methods. 
 
 
