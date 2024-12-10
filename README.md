@@ -12,7 +12,7 @@ This repository contains codes developed in Google Colab for identifying **Algor
 ## Notebooks
 
 - **Fine_Tuned_RoBERTa_and_Embeddings.ipynb**
-   - Contains codes for the experiments using a trained RoBERTa and extracted embeddings from the trained RoBERTa model for AD identification.
+   - Contains codes for the experiments using a trained RoBERTa and extracted embeddings from the fine tuned RoBERTa model for AD identification.
 
 - **LR_TFIDF.ipynb**
   - Contains codes for the Logistic Regression-based classifiers for AD identification. This notebook contains the implementation of the LR model.
