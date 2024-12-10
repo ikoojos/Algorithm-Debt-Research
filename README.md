@@ -11,22 +11,22 @@ This repository contains codes developed in Google Colab for identifying **Algor
 
 ## Notebooks
 
-- **RoBERTa.ipynb**
- - Contains codes for the experiments using RoBERTa and RoBERTa embeddings for AD identification [link](https://colab.research.google.com/drive/1P6lG_EnCNbSxsHSaU22bE5s0uqNe0Pqt#scrollTo=pKh3sNpN7-Ui)
+- **Fine_Tuned_RoBERTa_and_Embeddings.ipynb**
+ - Contains codes for the experiments using a trained RoBERTa and extracted embeddings from the trained RoBERTa model for AD identification.
 
-- **SVM.ipynb**
-  - Contains codes for the Support Vector Machine (SVM)-based classifiers for text classification tasks. This notebook contains the implementation of the various kernels.
+- **LR_TFIDF.ipynb**
+  - Contains codes for the Logistic Regression-based classifiers for AD identification. This notebook contains the implementation of the LR model.
   
-- **LR2.ipynb**
-  - Contains codes for the Logistic Regression (LR) models to identify AD from source code.
+- **SVM_linear_hash_.ipynb**
+  - Contains codes for the SVM Linear kernel with the Hashing vectoriser to identify AD.
   
 - **Dataset Preprocessing.ipynb**
   - Prepares and preprocesses datasets for training and evaluation.
   - Includes data cleaning, feature engineering, and exploratory analysis for model consistency and performance.
 
-- **Indicators and RoBERTa.ipynb**
-  - Contains codes for the RoBERTa embeddings with AD-indicative keywords to improve classification accuracy.
-  - Explores feature engineering methods by incorporating AD indicators.
+- **RoBERTa_DL.ipynb**
+  - Contains codes for the RoBERTa DL model.
+  
 
 - **Albert_Experiments.ipynb**
   - Contains codes for the implementation of the ALBERT model for AD classification.
@@ -55,9 +55,9 @@ This repository contains codes developed in Google Colab for identifying **Algor
 
 To run the notebooks:
 
-1. Open each file in Google Colab via the provided link or by uploading it directly.
-2. Install required libraries, such as `transformers`, for handling RoBERTa and ALBERT models.
-3. Follow each notebook’s instructions for data preprocessing, model training, and result analysis.
+1. Install required libraries, such as `transformers`, for handling DL models.
+2. Download the files.
+3. Change the path to the dataset to the correct path in your Colab notebook.
 
 ---
 
