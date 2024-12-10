@@ -15,17 +15,19 @@ This repository contains codes developed in Google Colab for identifying **Algor
    - Contains codes for the experiments using a trained RoBERTa and extracted embeddings from the fine tuned RoBERTa model for AD identification.
 
 - **LR_TFIDF.ipynb**
-  - Contains codes for the Logistic Regression-based classifiers for AD identification. This notebook contains the implementation of the LR model.
+  - Contains codes for the Logistic Regression-based classifier using TFIDF for AD identification. This notebook contains the implementation of the LR model.
   
 - **SVM_linear_hash_.ipynb**
   - Contains codes for the SVM Linear kernel with the Hashing vectoriser to identify AD.
-  
+    
+- **RoBERTa_DL.ipynb**
+  - Contains codes for the RoBERTa DL model.
+    
 - **Dataset Preprocessing.ipynb**
   - Prepares and preprocesses datasets for training and evaluation.
   - Includes data cleaning, feature engineering, and exploratory analysis for model consistency and performance.
 
-- **RoBERTa_DL.ipynb**
-  - Contains codes for the RoBERTa DL model.
+
   
 
 - **Albert_Experiments.ipynb**
