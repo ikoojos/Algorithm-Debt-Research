@@ -67,7 +67,7 @@ If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch
 ### **Dataset Setup**
 
 1. Download the dataset (`liu_datset_processed.csv`) to your local machine.
-2. Place it in an appropriate folder.
+2. Place it in an appropriate folder or upload it to your Google Drive.
 3. Update the dataset path in your notebook code, e.g.:
 
    ```python
@@ -100,8 +100,7 @@ If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch
    Handles reproducible dataset splitting for training and testing.
 
 3. **`preprocessing.py`**  
-   Provides text preprocessing functions, including tokenization and noise removal.
-
+   Provides text preprocessing functions.
 ---
 
 ## **Development Setup**
