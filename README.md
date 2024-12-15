@@ -125,9 +125,9 @@ Contributions are welcome! Feel free to create issues, submit pull requests, or 
 ## Contact
 For any questions or issues, please contact:
 
-- **Maintainer**: [Your Name/Username]
-- **Email**: your-email@example.com
+- **Maintainer**: [ikoojo]
+- **Email**: emmanuel.simon@anu.edu.au
 
 ---
 
-Thank you for exploring the **Technical Debt Analysis Repository**!
+Thank you for exploring the **AD identification Repository**!
