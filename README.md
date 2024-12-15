@@ -91,8 +91,7 @@ pip install transformers
 Clone the repository to your local machine using:
 
 ```bash
-git clone https://github.com/your-username/technical-debt-analysis.git
-cd technical-debt-analysis
+pip install -e .
 ```
 
 ### Step 2: Install Dependencies
@@ -112,10 +111,16 @@ Open the notebooks in Jupyter Notebook, JupyterLab, or Google Colab. For Google 
 2. Upload the dataset to your Colab environment or update the file path to match your local setup.
 
 ### Step 4: Update Dataset Path
-Modify the dataset path in the notebook code to point to the location of `td_dataset.csv`.
+Modify the dataset path in the notebook code to point to the location of `liu_datset_processed.csv`.
 
 ### Step 5: Execute Cells
-Run the cells in the notebook sequentially to replicate the results or analyze your own data.
+Run the cells in the notebook sequentially to replicate the results.
+
+---
+
+## PyTorch with CUDA
+
+If you want to use a GPU / CUDA, you must install PyTorch with the matching CUDA Version. Follow [PyTorch Get Started](https://pytorch.org/get-started/locally/) - for further details how to install PyTorch.
 
 ---
 
@@ -125,16 +130,12 @@ Here is an example of using the `RoBERTa.ipynb` notebook:
 1. Clone the repository.
 2. Install dependencies:
    ```bash
-   pip install transformers sentence-transformers numpy pandas scikit-learn
+   pip install -U sentence-transformers
    ```
-3. Open `RoBERTa.ipynb` in your preferred environment.
-4. Update the `dataset_path` variable with the correct path to `td_dataset.csv`.
+3. Open a file e.g., `RoBERTa.ipynb` in your preferred environment.
+4. Update the `dataset_path` variable with the correct path to `liu_datset_processed.csv`.
 5. Run the cells to preprocess data, generate embeddings, and train the classifier.
 
----
-
-## Paper:
-https://arxiv.org/abs/2408.10529
 
 ---
 
