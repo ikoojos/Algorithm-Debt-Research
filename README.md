@@ -10,16 +10,16 @@ Method: We conducted empirical studies using approaches such as TF-IDF, Count Ve
 ## Repository Structure
 The files are organised thus:
 ```
-├── dataset/                # Folder containing the dataset
+├── dataset/                          # Folder containing the dataset
 │   └── liu_datset_processed.csv      # Dataset file
-├── notebooks/              # Folder containing the Colab notebooks
-│   ├── RoBERTa.ipynb       # Notebook for RoBERTa-based embeddings
-│   ├── ALBERT.ipynb        # Notebook for ALBERT-based embeddings
-│   ├── Instructor.ipynb    # Notebook for Instructor embeddings
-│   ├── LR.ipynb            # Logistic Regression notebook
-│   ├── RF.ipynb            # Random Forest notebook
-│   ├── SVM.ipynb           # Support Vector Machine notebook
-├── README.md               # Documentation file
+├── notebooks/                        # Folder containing the Colab notebooks
+│   ├── RoBERTa.ipynb                 # Notebook for RoBERTa-based embeddings
+│   ├── ALBERT.ipynb                  # Notebook for ALBERT-based embeddings
+│   ├── Instructor.ipynb              # Notebook for Instructor embeddings
+│   ├── LR.ipynb                      # Logistic Regression notebook
+│   ├── RF.ipynb                      # Random Forest notebook
+│   ├── SVM.ipynb                     # Support Vector Machine notebook
+├── README.md                         # Documentation file
 ```
 
 ---
