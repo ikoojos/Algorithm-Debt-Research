@@ -84,6 +84,8 @@ pip install -r requirements.txt
 ```
 (If a `requirements.txt` file is not provided, refer to the dependencies listed above.)
 
+For VOYAGEAI, you need to get a token and replace the part: VOYAGE_API_KEY = "your_api_key"
+
 ### Step 3: Open Notebooks
 Open the notebooks in Jupyter Notebook, JupyterLab, or Google Colab. For Google Colab:
 
@@ -112,13 +114,15 @@ Here is an example of using the `RoBERTa.ipynb` notebook:
 
 ---
 
-## Contributing
-Contributions are welcome! Feel free to create issues, submit pull requests, or suggest improvements.
+## Paper:
+https://arxiv.org/abs/2408.10529
 
 ---
 
-## License
-...
+### Registered Report
+
+For further details about the research and methodology, refer to the [Registered Report](https://arxiv.org/pdf/2408.10529).
+
 
 ---
 
