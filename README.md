@@ -3,9 +3,9 @@
 
 Previous studies have shown that Machine Learning (ML) and Deep Learning (DL) models can detect Technical Debt (TD) from source code comments, specifically Self-Admitted Technical Debt (SATD). Despite the importance of ML/DL in software development, no studies focus on the automated detection of new SATD types in ML/DL systems, such as Algorithm Debt (AD). Detecting AD is crucial as it helps identify TD early, facilitating research and learning, and preventing AD-related issues like scalability.
 
-Aim: Our goal is to investigate the identification performance of various ML/DL models in detecting AD.
+**Aim** Our goal is to investigate the identification performance of various ML/DL models in detecting AD.
 
-Method: We conducted empirical studies using approaches such as TF-IDF, Count Vectorizer, and Hash Vectorizer with ML/DL classifiers. We used a dataset curated from seven DL frameworks, with comments manually classified into categories: AD, Compatibility, Defect, Design, Documentation, Requirement, and Test Debt. We used embeddings from DL models like ROBERTA and ALBERTv2, as well as large language models (LLMs) such as INSTRUCTOR and VOYAGE AI. We enriched the dataset with AD-related terms and trained various ML/DL classifiers, including Support Vector Machine, Logistic Regression, Random Forest, RoBERTa, and ALBERTv2.
+**Method** We conducted empirical studies using approaches such as TF-IDF, Count Vectorizer, and Hash Vectorizer with ML/DL classifiers. We used a dataset curated from seven DL frameworks, with comments manually classified into categories: AD, Compatibility, Defect, Design, Documentation, Requirement, and Test Debt. We used embeddings from DL models like ROBERTA and ALBERTv2, as well as large language models (LLMs) such as INSTRUCTOR and VOYAGE AI. We enriched the dataset with AD-related terms and trained various ML/DL classifiers, including Support Vector Machine, Logistic Regression, Random Forest, RoBERTa, and ALBERTv2.
 
 ## Repository Structure
 The files are organised thus:
@@ -47,6 +47,20 @@ Each notebook corresponds to a different approach for identifying AD:
 4. **LR.ipynb**: Applies Logistic Regression for AD identification.
 5. **RF.ipynb**: Utilises Random Forest for classification tasks.
 6. **SVM.ipynb**: Implements a Support Vector Machine (SVM) model for AD identification.
+
+
+### Scripts
+
+The following Python scripts provide utility functions and preprocessing steps:
+
+1. **utils.py**: Contains helper functions used across the notebooks, including loading datasets and formatting text for model compatibility.
+2. **splitting.py**: Handles dataset splitting into training and test sets while ensuring reproducibility and consistency.
+3. **preprocessing.py**: Provides functions for cleaning and preprocessing text data, such as tokenization and removal of unnecessary characters.
+
+### Dataset
+
+- **/dataset**: Contains the dataset used for training and testing the models. 
+  - Before running the notebooks, download this dataset and set the appropriate file path in your notebook.
 
 ---
 
