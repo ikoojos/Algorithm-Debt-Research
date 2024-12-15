@@ -1,4 +1,4 @@
-# Algorithm Debt Identification using Machine and Deep Learning Models
+# Automated Detection of Algorithm Debt in Deep Learning Frameworks: An Empirical Study
 
 
 Previous studies have shown that Machine Learning (ML) and Deep Learning (DL) models can detect Technical Debt (TD) from source code comments, specifically Self-Admitted Technical Debt (SATD). Despite the importance of ML/DL in software development, no studies focus on the automated detection of new SATD types in ML/DL systems, such as Algorithm Debt (AD). Detecting AD is crucial as it helps identify TD early, facilitating research and learning, and preventing AD-related issues like scalability.
