@@ -1,9 +1,14 @@
 # Algorithm Debt Identification using Machine and Deep Learning Models
 
-Welcome to the **AD identification using Machine and Deep Learning Models Repository**! This repository contains several Jupyter notebooks and datasets written using Colab for the identification and classification of AD from differnt TD types. Each notebook demonstrates the use of different models for identifying AD, such as Logistic Regression, Random Forest, Support Vector Machines, and transformer-based embeddings like RoBERTa, ALBERT, and Instructor.
+
+Previous studies have shown that Machine Learning (ML) and Deep Learning (DL) models can detect Technical Debt (TD) from source code comments, specifically Self-Admitted Technical Debt (SATD). Despite the importance of ML/DL in software development, no studies focus on the automated detection of new SATD types in ML/DL systems, such as Algorithm Debt (AD). Detecting AD is crucial as it helps identify TD early, facilitating research and learning, and preventing AD-related issues like scalability.
+
+Aim: Our goal is to investigate the identification performance of various ML/DL models in detecting AD.
+
+Method: We conducted empirical studies using approaches such as TF-IDF, Count Vectorizer, and Hash Vectorizer with ML/DL classifiers. We used a dataset curated from seven DL frameworks, with comments manually classified into categories: AD, Compatibility, Defect, Design, Documentation, Requirement, and Test Debt. We used embeddings from DL models like ROBERTA and ALBERTv2, as well as large language models (LLMs) such as INSTRUCTOR and VOYAGE AI. We enriched the dataset with AD-related terms and trained various ML/DL classifiers, including Support Vector Machine, Logistic Regression, Random Forest, RoBERTa, and ALBERTv2.
 
 ## Repository Structure
-
+The files are organised thus:
 ```
 ├── dataset/                # Folder containing the dataset
 │   └── liu_datset_processed.csv      # Dataset file
