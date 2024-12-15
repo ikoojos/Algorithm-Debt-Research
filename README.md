@@ -1,68 +1,133 @@
-# Algorithm Debt Research
+# Algorithm Debt Identification using Machine and Deep Learning Models
 
-This repository contains codes developed in Google Colab for identifying **Algorithm Debt (AD)** in Deep Learning (DL) frameworks. The aim of this project is to investigate AD identification performance of various Machine Learning (ML)/DL models and embeddings from Self Admitted Technical Debt in source code comments known as SATD through an empirical study.
+Welcome to the **AD identification using Machine and Deep Learning Models Repository**! This repository contains several Jupyter notebooks and datasets written using Colab for the identification and classification of AD from differnt TD types. Each notebook demonstrates the use of different models for identifying AD, such as Logistic Regression, Random Forest, Support Vector Machines, and transformer-based embeddings like RoBERTa, ALBERT, and Instructor.
 
-## Table of Contents
-1. [Notebooks](#notebooks)
-2. [Data and Embeddings](#data-and-embeddings)
-3. [Setup and Usage](#setup-and-usage)
+## Repository Structure
+
+```
+├── dataset/                # Folder containing the dataset
+│   └── liu_datset_processed.csv      # Dataset file
+├── notebooks/              # Folder containing the Colab notebooks
+│   ├── RoBERTa.ipynb       # Notebook for RoBERTa-based embeddings
+│   ├── ALBERT.ipynb        # Notebook for ALBERT-based embeddings
+│   ├── Instructor.ipynb    # Notebook for Instructor embeddings
+│   ├── LR.ipynb            # Logistic Regression notebook
+│   ├── RF.ipynb            # Random Forest notebook
+│   ├── SVM.ipynb           # Support Vector Machine notebook
+├── README.md               # Documentation file
+```
+
+---
+
+## Dataset
+
+The dataset required for these notebooks is located in the `dataset` folder. To use the dataset:
+
+1. Download the dataset (`liu_datset_processed.csv`) to your local machine.
+2. Update the appropriate file path in the notebook before running it. For example:
+
+   ```python
+   dataset_path = "path/to/dataset/liu_datset_processed.csv"
+   ```
 
 ---
 
 ## Notebooks
 
-- **Fine_Tuned_RoBERTa_and_Embeddings.ipynb**
-   - Contains codes for the experiments using a trained RoBERTa and extracted embeddings from the fine tuned RoBERTa model for AD identification.
+Each notebook corresponds to a different approach for identifying AD:
 
-- **LR_TFIDF.ipynb**
-  - Contains codes for the Logistic Regression-based classifier using TFIDF for AD identification. This notebook contains the implementation of the LR model.
-  
-- **SVM_linear_hash_.ipynb**
-  - Contains codes for the SVM Linear kernel with the Hashing vectoriser to identify AD.
-    
-- **RoBERTa_DL.ipynb**
-  - Contains codes for the RoBERTa DL model.
-    
-- **Dataset Preprocessing.ipynb**
-  - Prepares and preprocesses datasets for training and evaluation.
-  - Includes data cleaning, feature engineering, and exploratory analysis for model consistency and performance.
-
-
-  
-
-- **Albert_Experiments.ipynb**
-  - Contains codes for the implementation of the ALBERT model for AD classification.
-
-- **INSTRUCTOR MODEL_LR.ipynb**
-  - Contains codes for the for INSTRUCTOR embeddings combined with Logistic Regression for AD identification.
-
-- **Voyage AI.ipynb**
-  - Contains codes for the for Voyage AI embeddings combined with Logistic Regression for AD identification.
----
-
-## Data and Embeddings
-
-- **Indicator_roberta_embedding.csv**
-  - A CSV file with AD indicators and RoBERTa embeddings, preprocessed for use in experiments.
-
-- **Processed_liu.csv**
-  - A cleaned and structured version of the Liu et al. (2020) dataset, for model training.
-
-- **Albert_Embeddings.csv**
-  - ALBERT model-generated embeddings for use in ML/DL experiments on AD.
+1. **RoBERTa.ipynb**: Uses the RoBERTa model to generate embeddings for text data.
+2. **ALBERT.ipynb**: Implements the ALBERT model for identifying AD and its embeddings.
+3. **Instructor.ipynb**: Uses the Instructor model for embedding comments.
+4. **LR.ipynb**: Applies Logistic Regression for AD identification.
+5. **RF.ipynb**: Utilises Random Forest for classification tasks.
+6. **SVM.ipynb**: Implements a Support Vector Machine (SVM) model for AD identification.
 
 ---
 
-## Setup and Usage
+## Dependencies
 
-To run the notebooks:
+### Python Version
+The notebooks require **Python 3.8 or later**.
 
-1. Install required libraries, such as `transformers`, for handling DL models.
-2. Download the files.
-3. Change the path to the dataset to the correct path in your Colab notebook.
+### Required Libraries
+Before running any notebook, ensure you have the following libraries installed:
+
+```bash
+pip install numpy pandas scikit-learn matplotlib sentence-transformers
+```
+
+### Additional Libraries for Transformer Models
+To use RoBERTa, ALBERT, or Instructor embeddings, install:
+
+```bash
+pip install transformers
+```
 
 ---
 
-This repository provides the codes for experiments for the identification AD in ML/DL. Each notebook allows independent experimentation, enabling the testing of various models, embeddings, and AD-related feature engineering methods. 
+## Usage Instructions
 
+### Step 1: Clone the Repository
+Clone the repository to your local machine using:
 
+```bash
+git clone https://github.com/your-username/technical-debt-analysis.git
+cd technical-debt-analysis
+```
+
+### Step 2: Install Dependencies
+Install all required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+(If a `requirements.txt` file is not provided, refer to the dependencies listed above.)
+
+### Step 3: Open Notebooks
+Open the notebooks in Jupyter Notebook, JupyterLab, or Google Colab. For Google Colab:
+
+1. Upload the notebook to your Colab environment.
+2. Upload the dataset to your Colab environment or update the file path to match your local setup.
+
+### Step 4: Update Dataset Path
+Modify the dataset path in the notebook code to point to the location of `td_dataset.csv`.
+
+### Step 5: Execute Cells
+Run the cells in the notebook sequentially to replicate the results or analyze your own data.
+
+---
+
+## Example Workflow
+Here is an example of using the `RoBERTa.ipynb` notebook:
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   pip install transformers sentence-transformers numpy pandas scikit-learn
+   ```
+3. Open `RoBERTa.ipynb` in your preferred environment.
+4. Update the `dataset_path` variable with the correct path to `td_dataset.csv`.
+5. Run the cells to preprocess data, generate embeddings, and train the classifier.
+
+---
+
+## Contributing
+Contributions are welcome! Feel free to create issues, submit pull requests, or suggest improvements.
+
+---
+
+## License
+...
+
+---
+
+## Contact
+For any questions or issues, please contact:
+
+- **Maintainer**: [Your Name/Username]
+- **Email**: your-email@example.com
+
+---
+
+Thank you for exploring the **Technical Debt Analysis Repository**!
