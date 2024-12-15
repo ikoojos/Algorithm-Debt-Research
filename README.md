@@ -1,157 +1,173 @@
-# Automated Detection of Algorithm Debt in Deep Learning Frameworks: An Empirical Study
-
+# **Automated Detection of Algorithm Debt in Deep Learning Frameworks: An Empirical Study**
 
 Previous studies have shown that Machine Learning (ML) and Deep Learning (DL) models can detect Technical Debt (TD) from source code comments, specifically Self-Admitted Technical Debt (SATD). Despite the importance of ML/DL in software development, no studies focus on the automated detection of new SATD types in ML/DL systems, such as Algorithm Debt (AD). Detecting AD is crucial as it helps identify TD early, facilitating research and learning, and preventing AD-related issues like scalability.
 
-**Aim** Our goal is to investigate the identification performance of various ML/DL models in detecting AD.
+Aim: Our goal is to investigate the identification performance of various ML/DL models in detecting AD.
 
-**Method** We conducted empirical studies using approaches such as TF-IDF, Count Vectorizer, and Hash Vectorizer with ML/DL classifiers. We used a dataset curated from seven DL frameworks, with comments manually classified into categories: AD, Compatibility, Defect, Design, Documentation, Requirement, and Test Debt. We used embeddings from DL models like ROBERTA and ALBERTv2, as well as large language models (LLMs) such as INSTRUCTOR and VOYAGE AI. We enriched the dataset with AD-related terms and trained various ML/DL classifiers, including Support Vector Machine, Logistic Regression, Random Forest, RoBERTa, and ALBERTv2.
+Method: We conducted empirical studies using approaches such as TF-IDF, Count Vectorizer, and Hash Vectorizer with ML/DL classifiers. We used a dataset curated from seven DL frameworks, with comments manually classified into categories: AD, Compatibility, Defect, Design, Documentation, Requirement, and Test Debt. We used embeddings from DL models like ROBERTA and ALBERTv2, as well as large language models (LLMs) such as INSTRUCTOR and VOYAGE AI. We enriched the dataset with AD-related terms and trained various ML/DL classifiers, including Support Vector Machine, Logistic Regression, Random Forest, RoBERTa, and ALBERTv2.
 
-## Repository Structure
-The files are organised thus:
+---
+
+## **Repository Structure**
+
 ```
 ├── dataset/                          # Folder containing the dataset
 │   └── liu_datset_processed.csv      # Dataset file
 ├── notebooks/                        # Folder containing the Colab notebooks
-│   ├── RoBERTa.ipynb                 # Notebook for RoBERTa-based embeddings
-│   ├── ALBERT.ipynb                  # Notebook for ALBERT-based embeddings
+│   ├── RoBERTa.ipynb                 # Notebook for RoBERTa embeddings
+│   ├── ALBERT.ipynb                  # Notebook for ALBERT embeddings
 │   ├── Instructor.ipynb              # Notebook for Instructor embeddings
 │   ├── LR.ipynb                      # Logistic Regression notebook
 │   ├── RF.ipynb                      # Random Forest notebook
 │   ├── SVM.ipynb                     # Support Vector Machine notebook
+├── scripts/                          # Utility scripts
+│   ├── utils.py                      # Helper functions
+│   ├── splitting.py                  # Dataset splitting
+│   ├── preprocessing.py              # Text preprocessing
+├── requirements.txt                  # List of required dependencies
 ├── README.md                         # Documentation file
 ```
 
 ---
 
-## Dataset
+## **Installation**
 
-The dataset required for these notebooks is located in the `dataset` folder. To use the dataset:
+### **Python Version**
 
-1. Download the dataset (`liu_datset_processed.csv`) to your local machine.
-2. Update the appropriate file path in the notebook before running it. For example:
+The project requires **Python 3.8 or later**.
 
-   ```python
-   dataset_path = "path/to/dataset/liu_datset_processed.csv"
-   ```
-
----
-
-## Notebooks
-
-Each notebook corresponds to a different approach for identifying AD:
-
-1. **RoBERTa.ipynb**: Uses the RoBERTa model to generate embeddings for text data.
-2. **ALBERT.ipynb**: Implements the ALBERT model for identifying AD and its embeddings.
-3. **Instructor.ipynb**: Uses the Instructor model for embedding comments.
-4. **LR.ipynb**: Applies Logistic Regression for AD identification.
-5. **RF.ipynb**: Utilises Random Forest for classification tasks.
-6. **SVM.ipynb**: Implements a Support Vector Machine (SVM) model for AD identification.
-
-
-### Scripts
-
-The following Python scripts provide utility functions and preprocessing steps:
-
-1. **utils.py**: Contains helper functions used across the notebooks, including loading datasets and formatting text for model compatibility.
-2. **splitting.py**: Handles dataset splitting into training and test sets while ensuring reproducibility and consistency.
-3. **preprocessing.py**: Provides functions for cleaning and preprocessing text data, such as tokenization and removal of unnecessary characters.
-
-### Dataset
-
-- **/dataset**: Contains the dataset used for training and testing the models. 
-  - Before running the notebooks, download this dataset and set the appropriate file path in your notebook.
-
----
-
-## Dependencies
-
-### Python Version
-The notebooks require **Python 3.8 or later**.
-
-### Required Libraries
-Before running any notebook, ensure you have the following libraries installed:
+### **Install Dependencies**
+Before running any notebook, ensure you have installed the following libraries:
 
 ```bash
 pip install numpy pandas scikit-learn matplotlib sentence-transformers
 ```
 
-### Additional Libraries for Transformer Models
-To use RoBERTa, ALBERT, or Instructor embeddings, install:
+Install these required libraries as well:
+
+```bash
+pip install -r requirements.txt
+```
+(If a requirements.txt file is not provided, refer to the dependencies listed above.)
+
+For additional dependencies for transformer-based models, install:
 
 ```bash
 pip install transformers
 ```
 
----
+For VOYAGEAI, you need to get a token and replace the part: VOYAGE_API_KEY = "your_api_key" from the [VOYAGEAI Homepage](https://dash.voyageai.com/api-keys)
 
-## Usage Instructions
-
-### Step 1: Clone the Repository
-Clone the repository to your local machine using:
-
-```bash
-pip install -e .
-```
-
-### Step 2: Install Dependencies
-Install all required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-(If a `requirements.txt` file is not provided, refer to the dependencies listed above.)
-
-For VOYAGEAI, you need to get a token and replace the part: VOYAGE_API_KEY = "your_api_key"
-
-### Step 3: Open Notebooks
-Open the notebooks in Jupyter Notebook, JupyterLab, or Google Colab. For Google Colab:
-
-1. Upload the notebook to your Colab environment.
-2. Upload the dataset to your Colab environment or update the file path to match your local setup.
-
-### Step 4: Update Dataset Path
-Modify the dataset path in the notebook code to point to the location of `liu_datset_processed.csv`.
-
-### Step 5: Execute Cells
-Run the cells in the notebook sequentially to replicate the results.
+If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch.org/get-started/locally/) for installation instructions.
 
 ---
 
-## PyTorch with CUDA
+## **Usage**
 
-If you want to use a GPU / CUDA, you must install PyTorch with the matching CUDA Version. Follow [PyTorch Get Started](https://pytorch.org/get-started/locally/) - for further details how to install PyTorch.
+### **Dataset Setup**
+
+1. Download the dataset (`liu_datset_processed.csv`) to your local machine.
+2. Place it in an appropriate folder.
+3. Update the dataset path in your notebook code, e.g.:
+
+   ```python
+   file_path = "path/to/dataset/liu_datset_processed.csv"
+   ```
+
+### **Running the Notebooks**
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-repository.git
+   cd your-repository
+   ```
+
+2. Open any notebook (e.g., `RoBERTa.ipynb`) in Jupyter Notebook, JupyterLab, or Google Colab.
+3. Ensure all dependencies are installed.
+4. Modify the dataset path as needed and run the cells sequentially.
 
 ---
 
-## Example Workflow
-Here is an example of using the `RoBERTa.ipynb` notebook:
+## **Scripts**
 
-1. Clone the repository.
-2. Install dependencies:
+### **Key Scripts**
+
+1. **`utils.py`**  
+   Contains helper functions for loading datasets, formatting text, and other utilities.
+
+2. **`splitting.py`**  
+   Handles reproducible dataset splitting for training and testing.
+
+3. **`preprocessing.py`**  
+   Provides text preprocessing functions, including tokenization and noise removal.
+
+---
+
+## **Development Setup**
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-repository.git
+   ```
+
+2. Create a virtual environment and activate it:
+
+   ```bash
+   python -m venv env
+   source env/bin/activate   # On Windows, use `env\Scripts\activate`
+   ```
+
+3. Install dependencies for development:
+
+   ```bash
+   python -m pip install -e ".[dev]"
+   pre-commit install
+   ```
+
+4. To run tests:
+
+   ```bash
+   pytest
+   ```
+
+---
+
+## **Example Workflow**
+
+Here is an example of running the `RoBERTa.ipynb` notebook:
+
+1. Clone the repository
+2. Install dependencies.
    ```bash
    pip install -U sentence-transformers
    ```
-3. Open a file e.g., `RoBERTa.ipynb` in your preferred environment.
-4. Update the `dataset_path` variable with the correct path to `liu_datset_processed.csv`.
-5. Run the cells to preprocess data, generate embeddings, and train the classifier.
-
-
----
-
-### Registered Report
-
-For further details about the research and methodology, refer to the [Registered Report](https://arxiv.org/pdf/2408.10529).
-
+4. Open the notebook (`RoBERTa.ipynb`) in your preferred (Jupyter or Colab).
+5. Update the `dataset_path` variable with the location of `liu_datset_processed.csv`.
+6. Run the cells sequentially to replicate the results.
 
 ---
 
-## Contact
-For any questions or issues, please contact:
+## **Citation**
+
+If you use this repository or its results, please cite the research as follows:
+
+```plaintext
+Simon, E.I.O., Hettiarachchi, C., Potanin, A., Suominen, H. and Fard, F., "Automated Detection of Algorithm Debt in Deep Learning Frameworks: An Empirical Study," 2024. [Online]. Available: https://arxiv.org/pdf/2408.10529
+```
+
+---
+
+## **Contact**
+
+For questions, feedback, or support, please contact:
 
 - **Maintainer**: [ikoojo]
 - **Email**: emmanuel.simon@anu.edu.au
 
 ---
 
-Thank you for exploring the **AD identification Repository**!
+## **Acknowledgments**
+
+This repository was developed as part of the research on Algorithm Debt (AD) in ML/DL systems. Special thanks to the supervisors of the research.
