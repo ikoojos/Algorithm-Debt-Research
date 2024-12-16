@@ -54,6 +54,10 @@ For additional dependencies for transformer-based models, install:
 pip install transformers
 ```
 
+```bash
+!pip install huggingface_hub==0.25.2
+```
+
 For VOYAGEAI, you need to get a token and replace the part: VOYAGE_API_KEY = "your_api_key" from the [VOYAGEAI Homepage](https://dash.voyageai.com/api-keys)
 
 If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch.org/get-started/locally/) for installation instructions.
