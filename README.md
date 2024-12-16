@@ -32,7 +32,6 @@ Install these required libraries as well:
 ```bash
 pip install -r requirements.txt
 ```
-(If a requirements.txt file is not provided, refer to the dependencies listed above.)
 
 For additional dependencies for transformer-based models, install:
 
@@ -87,6 +86,9 @@ Sample python scripts are provided which highlights the various notebooks create
    file_path = "path/to/dataset/liu_datset_processed.csv"
    ```
 
+### **Downloading the Scripts**
+Download the folllowing scripts and uplaod them in the root directory of your folder: lr_tuning, utils.py, evaluate_model.py, and preprocess.py
+
 ### **Running the Notebooks**
 
 1. Clone the repository:
@@ -103,19 +105,6 @@ Sample python scripts are provided which highlights the various notebooks create
 
 ---
 
-## **Scripts**
-
-### **Key Scripts**
-
-1. **`utils.py`**  
-   Contains helper functions for loading common imports.
-
-2. **`splitting.py`**  
-   Handles reproducible dataset splitting for training, validation, and testing.
-
-3. **`preprocessing.py`**  
-   Provides text preprocessing functions.
----
 
 ## **Development Setup**
 
@@ -156,9 +145,13 @@ Here is an example of running the `RoBERTa.ipynb` notebook:
    ```bash
    pip install -U sentence-transformers
    ```
-4. Open the notebook (`RoBERTa.ipynb`) in your Jupyter Notebook or uploabd to Colab.
+4. Open a notebook (e.g., `RoBERTa.ipynb`) in your Jupyter Notebook or upload to Colab.
 5. Upload the dataset to Colab and update the `dataset_path` variable with the correct location of `liu_datset_processed.csv`.
-6. Run the cells sequentially to replicate the results.
+6. Change this line to your appropriate working directory in Colab:
+   ```bash
+   %cd '/content/drive/My Drive/AD Identification using SATD'
+   ```
+8. Run the cells sequentially to replicate the results.
 
 ---
 
@@ -176,8 +169,7 @@ Simon, E.I.O., Hettiarachchi, C., Potanin, A., Suominen, H. and Fard, F., "Autom
 
 For questions, feedback, or support, please contact:
 
-- **Maintainer**: [ikoojo]
-- **Email**: emmanuel.simon@anu.edu.au
+- Iko-Ojo on emmanuel.simon@anu.edu.au
 
 ---
 
