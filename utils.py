@@ -23,7 +23,7 @@ warnings.filterwarnings("ignore")
 # Exported symbols
 __all__ = [
     "pd", "np", "train_test_split", "Pipeline", 
-    "TfidfVectorizer", "CountVectorizer", "StandardScaler", 
-    "LogisticRegression", "f1_score", "accuracy_score", 
+    "TfidfVectorizer", "CountVectorizer", "HashingVectorizer", "StandardScaler", 
+    "LogisticRegression", "f1_score", "accuracy_score", "SVC",
     "confusion_matrix", "classification_report", "product", "StratifiedKFold"
 ]
