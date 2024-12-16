@@ -80,16 +80,16 @@ Sample python scripts are provided which highlights the various notebooks create
 
 1. Download the dataset (`liu_datset_processed.csv`) to your local machine.
 2. Place it in an appropriate folder or upload it to your Google Drive depending on how you want to run it.
-3. Update the dataset path in your notebook code, e.g.:
+3. Locate the cell for filepath, and update the dataset path in your notebook code, e.g.:
 
    ```python
    file_path = "path/to/dataset/liu_datset_processed.csv"
    ```
 
 ### **Downloading the Scripts**
-Download the folllowing scripts and uplaod them in the root directory of your folder: lr_tuning, utils.py, evaluate_model.py, and preprocess.py
+Download the folllowing scripts to your local machine and and uplaod them to the root directory of your folder: lr_tuning, utils.py, evaluate_model.py, and preprocess.py
 
-### **Running the Notebooks**
+### **Running the Notebook on Colab**
 
 1. Clone the repository:
 
@@ -99,7 +99,7 @@ Download the folllowing scripts and uplaod them in the root directory of your fo
    
    ```
 
-2. Open any notebook (e.g., `RoBERTa.ipynb`) in Jupyter Notebook, JupyterLab, or Google Colab.
+2. Download the required notebook, and Open any notebook (e.g., `RoBERTa.ipynb` in this case) in Jupyter Notebook, JupyterLab, or Google Colab.
 3. Ensure all dependencies are installed.
 4. Modify the dataset path as needed and run the cells sequentially.
 
@@ -136,9 +136,9 @@ Download the folllowing scripts and uplaod them in the root directory of your fo
 
 ---
 
-## **Example Workflow**
+## **Example Workflow on Colab**
 
-Here is an example of running the `RoBERTa.ipynb` notebook:
+Here is an example of running  notebook e.g., `RoBERTa.ipynb` on Google Colab notebook:
 
 1. Clone the repository or download the Colab file.
 2. Install dependencies.
