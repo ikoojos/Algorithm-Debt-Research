@@ -11,21 +11,19 @@ Method: We conducted empirical studies using approaches such as TF-IDF, Count Ve
 ## **Repository Structure**
 
 ```
-├── dataset/                          # Folder containing the dataset
-│   └── liu_datset_processed.csv      # Dataset file
-├── notebooks/                        # Folder containing the Colab notebooks
-│   ├── RoBERTa.ipynb                 # Notebook for RoBERTa embeddings
-│   ├── ALBERT.ipynb                  # Notebook for ALBERT embeddings
-│   ├── Instructor.ipynb              # Notebook for Instructor embeddings
-│   ├── LR.ipynb                      # Logistic Regression notebook
-│   ├── RF.ipynb                      # Random Forest notebook
-│   ├── SVM.ipynb                     # Support Vector Machine notebook
-├── scripts/                          # Utility scripts
-│   ├── utils.py                      # Helper functions
-│   ├── splitting.py                  # Dataset splitting
-│   ├── preprocessing.py              # Text preprocessing
-├── requirements.txt                  # List of required dependencies
-├── README.md                         # Documentation file
+├── dataset/                      # Folder containing the dataset
+   └── liu_datset_processed.csv   # Dataset filenotebooks/                       
+├── RoBERTa.ipynb                 # Notebook for RoBERTa embeddings
+├── ALBERT.ipynb                  # Notebook for ALBERT embeddings
+├── Instructor.ipynb              # Notebook for Instructor embeddings
+├── LR.ipynb                      # Logistic Regression notebook
+├── RF.ipynb                      # Random Forest notebook
+├── SVM.ipynb                     # Support Vector Machine notebook                         
+├── utils.py                      # Helper functions
+├── splitting.py                  # Dataset splitting
+├── preprocessing.py              # Text preprocessing
+├── requirements.txt              # List of required dependencies
+├── README.md                     # Documentation file
 ```
 
 ---
