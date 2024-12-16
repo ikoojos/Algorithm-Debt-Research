@@ -8,8 +8,54 @@ Method: We conducted empirical studies using approaches such as TF-IDF, Count Ve
 
 ---
 
-## **Repository Structure**
+## **Installation and Dependencies**
+---
+### **Python Version**
 
+The project requires **Python 3.8 or later**
+```bash
+python3 -m venv env
+source env/bin/activate
+pip install --upgrade pip
+```
+---
+
+
+### **Dependencies**
+Before running any notebook, ensure you have installed the following libraries:
+
+```bash
+pip install numpy pandas scikit-learn matplotlib sentence-transformers
+```
+Install these required libraries as well:
+
+```bash
+pip install -r requirements.txt
+```
+(If a requirements.txt file is not provided, refer to the dependencies listed above.)
+
+For additional dependencies for transformer-based models, install:
+
+```bash
+!pip install transformers
+```
+
+```bash
+!pip install huggingface_hub==0.25.2
+```
+
+```bash
+!pip install --upgrade huggingface_hub
+```
+
+For VOYAGEAI, you need to get a token and replace the part: VOYAGE_API_KEY = "your_api_key" from the [VOYAGEAI Homepage](https://dash.voyageai.com/api-keys)
+
+If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch.org/get-started/locally/) for installation instructions.
+
+---
+
+## **Repository Structure**
+Sample python scripts are provided which highlights the various notebooks created in Python.
 ```
 ├── dataset/                      # Folder containing the dataset
    └── liu_datset_processed.csv   # Dataset filenotebooks/                       
@@ -28,52 +74,13 @@ Method: We conducted empirical studies using approaches such as TF-IDF, Count Ve
 
 ---
 
-## **Installation**
-
-### **Python Version**
-
-The project requires **Python 3.8 or later**.
-
-### **Install Dependencies**
-Before running any notebook, ensure you have installed the following libraries:
-
-```bash
-pip install numpy pandas scikit-learn matplotlib sentence-transformers
-```
-
-Install these required libraries as well:
-
-```bash
-pip install -r requirements.txt
-```
-(If a requirements.txt file is not provided, refer to the dependencies listed above.)
-
-For additional dependencies for transformer-based models, install:
-
-```bash
-pip install transformers
-```
-
-```bash
-!pip install huggingface_hub==0.25.2
-```
-
-```bash
-!pip install --upgrade huggingface_hub
-```
-
-For VOYAGEAI, you need to get a token and replace the part: VOYAGE_API_KEY = "your_api_key" from the [VOYAGEAI Homepage](https://dash.voyageai.com/api-keys)
-
-If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch.org/get-started/locally/) for installation instructions.
-
----
 
 ## **Usage**
 
 ### **Dataset Setup**
 
 1. Download the dataset (`liu_datset_processed.csv`) to your local machine.
-2. Place it in an appropriate folder or upload it to your Google Drive.
+2. Place it in an appropriate folder or upload it to your Google Drive depending on how you want to run it.
 3. Update the dataset path in your notebook code, e.g.:
 
    ```python
@@ -85,8 +92,9 @@ If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repository.git
-   cd your-repository
+   git clone https://github.com/Algorithm-Debt-Research.git
+   cd pip install -e .
+   
    ```
 
 2. Open any notebook (e.g., `RoBERTa.ipynb`) in Jupyter Notebook, JupyterLab, or Google Colab.
@@ -100,10 +108,10 @@ If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch
 ### **Key Scripts**
 
 1. **`utils.py`**  
-   Contains helper functions for loading datasets, formatting text, and other utilities.
+   Contains helper functions for loading common imports.
 
 2. **`splitting.py`**  
-   Handles reproducible dataset splitting for training and testing.
+   Handles reproducible dataset splitting for training, validation, and testing.
 
 3. **`preprocessing.py`**  
    Provides text preprocessing functions.
@@ -114,7 +122,7 @@ If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repository.git
+   git clone https://github.com/Algorithm-Debt-Research.git
    ```
 
 2. Create a virtual environment and activate it:
@@ -143,13 +151,13 @@ If using CUDA for GPU acceleration, follow [PyTorch Get Started](https://pytorch
 
 Here is an example of running the `RoBERTa.ipynb` notebook:
 
-1. Clone the repository
+1. Clone the repository or download the Colab file.
 2. Install dependencies.
    ```bash
    pip install -U sentence-transformers
    ```
-4. Open the notebook (`RoBERTa.ipynb`) in your preferred (Jupyter or Colab).
-5. Update the `dataset_path` variable with the location of `liu_datset_processed.csv`.
+4. Open the notebook (`RoBERTa.ipynb`) in your Jupyter Notebook or uploabd to Colab.
+5. Upload the dataset to Colab and update the `dataset_path` variable with the correct location of `liu_datset_processed.csv`.
 6. Run the cells sequentially to replicate the results.
 
 ---
