@@ -35,6 +35,6 @@ class CustomFeatureExtractor(BaseEstimator, TransformerMixin):
         # Return sparse matrix of features for the pipeline
         return csr_matrix(custom_features_df.values)
 
-# Define keywords
+# Define keyword from AD top words
 keywords = ['shape', 'input', 'tensor', 'number', 'matrix']
 
