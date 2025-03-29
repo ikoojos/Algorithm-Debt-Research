@@ -36,5 +36,5 @@ class CustomFeatureExtractor(BaseEstimator, TransformerMixin):
         return csr_matrix(custom_features_df.values)
 
 # Define keywords
-keywords = ['shape', 'input', 'tensor', 'output', 'size', 'convolution',
-            'value', 'efficient', 'matrix', 'model', 'node', 'function', 'batch']
+keywords = ['shape', 'input', 'tensor', 'number', 'matrix']
+
